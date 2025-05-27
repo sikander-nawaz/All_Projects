@@ -8,6 +8,10 @@ header#navbar {
   z-index: 1000;
 }
 
+.box {
+  min-height: 250px;
+}
+
 #faqs {
   background: #c31432;
   /* fallback for old browsers */
