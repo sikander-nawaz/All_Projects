@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+                            <!-- Icon of Calculator -->
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Circle-icons-calculator.svg/512px-Circle-icons-calculator.svg.png" type="image/x-icon">
+                            <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                            <!-- CSS Fill -->
+    <link rel="stylesheet" href="./style.css">
+                            <!-- JavaScript File -->
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="normal-calculator">
+                <div class="nav-bar">
+                    <img src="./assests/converter.png" alt="converter" onclick="slider()">
+                    <!-- <img src="./assests/a.svg" alt="clear" onclick="delResult()"> -->
+                    <button onclick="delResult()"><i class="fa-solid fa-delete-left"></i></button>
+                </div>
+
+                <div class="container">
+                    <input type="text" readonly placeholder="00" id="result_01">
+                    <input type="text" readonly placeholder="Result" id="result_02">
+                </div>
+
+            <div class="button-section">
+                <div class="group-1">
+                    <div class="rectangular-2">
+                        <div class="rectangular-3">
+                            <div class="rectangular-1">
+                                <div class="btns">
+                                    <div class="row-1">
+                                        <button onclick="clearResult('')">CE</button>
+                                        <div class="brackets">
+                                            <button onclick="appendNumber( '(' )">(</button>
+                                            <button onclick="appendNumber( ')' )">)</button>
+                                        </div>
+                                        <button onclick="valueOfPercentage()">%</button>
+                                        <button onclick="appendOperator('/')">÷</button>
+                                    </div>
+
+                                    <div class="row-1">
+                                        <div class="bar-1">
+                                            <button onclick="appendNumber(7)">7</button>
+                                            <button onclick="appendNumber(8)">8</button>
+                                            <button onclick="appendNumber(9)">9</button>
+                                        </div>
+
+                                        <button onclick="appendOperator('*')">×</button>
+                                    </div>
+
+                                    <div class="row-1">
+                                        <div class="bar-1">
+                                            <button onclick="appendNumber(4)">4</button>
+                                            <button onclick="appendNumber(5)">5</button>
+                                            <button onclick="appendNumber(6)">6</button>
+                                        </div>
+
+                                        <button onclick="appendOperator('-')">-</button>
+                                    </div>
+
+                                    <div class="row-1">
+                                        <div class="bar-1">
+                                            <button onclick="appendNumber(1)">1</button>
+                                            <button onclick="appendNumber(2)">2</button>
+                                            <button onclick="appendNumber(3)">3</button>
+                                        </div>
+
+                                        <button onclick="appendOperator('+')">+</button>
+                                    </div>
+
+                                    <div class="row-1">
+                                        <div class="bar-1">
+                                            <button onclick="appendNumber('.')">●</button>
+                                            <button onclick="appendNumber(0)">0</button>
+                                            <button onclick="appendNumber('00')">00</button>
+                                        </div>
+
+                                        <button class="equal" onclick="calculate()" style="background-color: #FF0000; border-radius: 50px; height: 60px; width: 60px;">=</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                    <!-- Scientific-Calculator -->
+            <div class="scientific-calculator hidden">
+                <div class="button-section-2">
+                    <div class="rectangular-02">
+                        <div class="rectangular-03">
+                            <div class="rectangular-01">
+                                <div class="row-1">
+                                    <button onclick="clearResult('')">CE</button>
+                                    <button onclick="valueOfLog()">lg</button>
+                                    <button onclick="valueOfLn()">ln</button>
+                                    <button onclick="appendNumber(3.14159)">π</button>
+                                </div>
+    
+                                <div class="row-1">
+                                    <button onclick="valueOfSqrRoot()">√</button>
+                                    <div class="brackets">
+                                        <button onclick="appendNumber( '(' )">(</button>
+                                        <button onclick="appendNumber( ')' )">)</button>
+                                    </div>
+                                    <button onclick="valueOfPercentage()">%</button>
+                                    <button onclick="appendOperator('/')">÷</button>
+                                </div>
+    
+                                <div class="row-1">
+                                    <button onclick="appendNumber('**')">^</button>
+                                    <div class="numbers">
+                                        <div class="bar-01">
+                                            <button onclick="appendNumber(7)">7</button>
+                                            <button onclick="appendNumber(8)">8</button>
+                                            <button onclick="appendNumber(9)">9</button>
+                                        </div>
+                                        <div class="bar-01 bar-02">
+                                            <button onclick="appendNumber(4)">4</button>
+                                            <button onclick="appendNumber(5)">5</button>
+                                            <button onclick="appendNumber(6)">6</button>
+                                        </div>
+                                        <div class="bar-01 bar-02">
+                                            <button onclick="appendNumber(1)">1</button>
+                                            <button onclick="appendNumber(2)">2</button>
+                                            <button onclick="appendNumber(3)">3</button>
+                                        </div>
+                                        <div class="bar-01 bar-02">
+                                            <button onclick="appendNumber('.')">●</button>
+                                            <button onclick="appendNumber(0)">0</button>
+                                            <button onclick="appendNumber('00')">00</button>
+                                        </div>
+                                    </div>
+                                    <button onclick="appendOperator('*')">×</button>
+                                </div>
+    
+                                <div class="row-1">
+                                    <button onclick="valueOfSin()" id="1">sin</button>
+                                    <button onclick="valueOfSinInv()" class="h" id="01">sin<sup>-1</sup></button>
+                                    <button onclick="appendOperator('-')">-</button>
+                                </div>
+                                <div class="row-1">
+                                    <button onclick="valueOfCos()" id="2">cos</button>
+                                    <button onclick="valueOfCosInv()" class="h" id="02">cos<sup>-1</sup></button>
+                                    <button onclick="appendOperator('+')">+</button>
+                                </div>
+    
+                                <div class="row-1">
+                                    <button onclick="valueOfTan()" id="3">tan</button>
+                                    <button onclick="valueOfTanInv()" class="h" id="03">tan<sup>-1</sup></button>
+                                    <button onclick="appendNumber(2.7183)">e</button>
+                                    <button onclick="slider1()">Inv</button> 
+                                    <button class="equal" onclick="calculate()" style="background-color: #FF0000; border-radius: 50px; height: 60px; width: 60px;">=</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

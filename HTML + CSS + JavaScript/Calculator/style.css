@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: #ffffff;
+    --bg-color: linear-gradient(162.52deg, #373737 -5.28%, #252628 13.55%, #000309 103.73%);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-bar > img{
+    cursor: pointer;
+    /* height: 25px; */
+}
+
+.nav-bar > button{
+    width: 25px;
+    font-size: larger;
+    color: #ffffff;
+    background: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+.container{
+    width: 340px;
+    margin-inline: auto;
+}
+
+.normal-calculator{
+    height: 618px;
+    width: 361px;
+    border: 1px solid black;
+    background: var(--bg-color);
+    margin-inline: auto;
+}
+
+#result_01{
+    width: 340px;
+    height: 120px;
+    border-style: none;
+    background: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: var(--text-color);
+}
+#result_02{
+    width: 340px;
+    height: 120px;
+    border-style: none;
+    background: none;
+    text-align: right;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    color: var(--text-color);
+}
+
+::placeholder{
+    color: var(--text-color); 
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-section{
+    width: 361px;
+    height: 443px;
+}
+
+.rectangular-1{
+    width: 360px;
+    height: 351px;
+    background: rgba(17, 19, 24, 0.55);
+    border-radius: 30px 30px 0 0;
+}
+
+.rectangular-2{
+    width: 360px;
+    height: 351px;
+    background: linear-gradient(33.86deg, rgba(4, 122, 130, 0.59) 14.87%, rgba(53, 99, 114, 0.59) 42.18%, rgba(66, 134, 155, 0.59) 67.77%, rgba(0, 34, 53, 0.59) 93.7%, rgba(66, 134, 155, 0.59) 105%);
+    border-radius: 30px 30px 0 0;
+}
+
+.rectangular-3{
+
+    width: 360px;
+    height: 351px;
+    background: rgba(0, 194, 255, 0.56);
+    border-radius: 30px 30px 0 0;
+}
+
+.row-1{
+    padding-top: 5px;
+    margin-inline: auto;
+    width: 340px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.row-1 > button{
+    width: 69px;
+    height: 69px;
+    border-style: none;
+    border-radius: 10px;
+    background: none;
+    color: var(--text-color);
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.brackets > button{
+    width: 35px;
+    height: 69px;
+    border-style: none;
+    border-radius: 10px;
+    background: none;
+    color: var(--text-color);
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.bar-1{
+    width: 260px;
+    height: 57px;
+    background: rgba(5, 5, 5, 0.3);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.bar-1 > button{
+    width: 69px;
+    height: 69px;
+    border-style: none;
+    border-radius: 10px;
+    background: none;
+    color: var(--text-color);
+    font-size: x-large;
+    cursor: pointer;
+}
+
+/* .equal{
+    width: 68px;
+    height: 68px;
+    background-color: red;
+} */
+
+
+
+.scientific-calculator{
+    height: 425px;
+    width: 361px;
+}
+
+.rectangular-01{
+    width: 360px;
+    height: 424px;
+    background: rgba(17, 19, 24, 0.55);
+    border-radius: 30px 30px 0 0;
+}
+
+.rectangular-02{
+    width: 360px;
+    height: 424px;
+    background: linear-gradient(33.86deg, rgba(4, 122, 130, 0.59) 14.87%, rgba(53, 99, 114, 0.59) 42.18%, rgba(66, 134, 155, 0.59) 67.77%, rgba(0, 34, 53, 0.59) 93.7%, rgba(66, 134, 155, 0.59) 105%);
+    border-radius: 30px 30px 0 0;
+}
+
+.rectangular-03{
+
+    width: 360px;
+    height: 424px;
+    background: rgba(0, 194, 255, 0.56);
+    border-radius: 30px 30px 0 0;
+}
+
+.bar-01{
+    width: 180px;
+    height: 40px;
+    margin-top: 13px;
+    background: rgba(5, 5, 5, 0.3);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+.bar-01{
+    width: 180px;
+    height: 40px;
+    margin-top: 10px;
+    background: rgba(5, 5, 5, 0.3);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.bar-01 > button{
+    width: 46px;
+    height: 46px;
+    border-style: none;
+    border-radius: 10px;
+    background: none;
+    color: var(--text-color);
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.h{
+    display: none;
+}
