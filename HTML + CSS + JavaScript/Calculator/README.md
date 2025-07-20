@@ -38,7 +38,9 @@ Features
 
 > Link: https://javascript-calculator-assignment.netlify.app/
 
-
 ---
+<div align = 'center'>
+Thanks for Checking Out My Work
+</div>
 
 
