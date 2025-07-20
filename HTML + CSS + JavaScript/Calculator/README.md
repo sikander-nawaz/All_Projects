@@ -24,12 +24,21 @@ Features
 - Angle unit: **Degree** (default)  
 
 ---
+## 📂 Tech Stack
 
+- HTML5  
+- CSS3 (custom gradients, layout, and design)  
+- Vanilla JavaScript (functional logic)  
+- Font Awesome (icons)  
+- Google Fonts
+
+---
+
+## 💻 Live Demo
+
+> Link: https://javascript-calculator-assignment.netlify.app/
 
 
 ---
 
 
-
-# Features
-Link: https://javascript-calculator-assignment.netlify.app/
